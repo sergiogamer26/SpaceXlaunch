@@ -9,7 +9,7 @@ Este repositorio alberga un sitio web que proporciona información detallada sob
 
 Puedes explorar el sitio web en línea visitando el siguiente enlace:
 
-[SpaceX Launches](https://github.com/sergiogamer26/SpaceXlaunch)
+[SpaceX Launches](https://spacex-lanzamientos.vercel.app/)
 
 ## Tecnologías Utilizadas
 
@@ -43,7 +43,7 @@ This repository hosts a website that provides detailed information about SpaceX 
 
 You can explore the website online by visiting the following link:
 
-[SpaceX Launches](https://github.com/sergiogamer26/SpaceXlaunch)
+[SpaceX Launches](https://spacex-lanzamientos.vercel.app/)
 
 ## Technologies Used
 
