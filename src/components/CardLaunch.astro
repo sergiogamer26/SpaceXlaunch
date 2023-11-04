@@ -32,7 +32,7 @@ hover:scale-105 hover:bg-gray-700 hover:border-gray-500 transition flex flex-col
 </h2>
 
 <p class="mb-4 font-light text-gray-400">
-    {details  details?.length > 100 ? details.slice(0, 100) + "...": details}
+    {details != null && details?.length > 100 ? details.slice(0, 100) + "...": details}
 </p>
 
 </header>
