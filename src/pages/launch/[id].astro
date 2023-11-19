@@ -1,0 +1,39 @@
+---
+import type { GetStaticPaths } from "astro";
+import Layout from '../../layouts/Layout.astro'
+import { getLaunchBy } from '../../lib/SpaceX'
+import { getLastestLaunches }  from '../../lib/SpaceX'
+export const prerender = false
+const { id } = Astro.params
+
+console.log({ id })
+let launch
+if (id) {
+    launch = await getLaunchBy ({ id })
+}
+
+export async function getStaticPaths() {
+    const launches = await getLastestLaunches()
+
+    return launches.map((launch) => ({
+        params : { id: launch.id },
+    }))
+}
+
+//     return [
+//         {params: {id: '5eb87cd9ffd86e000604b32a' }}
+//     ];
+// }
+
+
+console.log(launch)
+---
+<Layout title={`Lanzamiento ${id}`}>
+<article >
+    <img scr={launch?. links?.patch.small} alt="hi" />
+    <h2>launch   </h2>
+    {launch?.id}    
+<p> {launch?.details}  </p>
+</article>
+
+</Layout>
